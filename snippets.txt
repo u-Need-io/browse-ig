@@ -1,0 +1,10 @@
+ <ImagePalette image={this.state.image} crossOrigin={true}>
+    {({ backgroundColor, color, alternativeColor }) => (
+      
+      <div style={{ backgroundColor, color }}>
+      {backgroundColor}
+        This div has been themed based on
+        <span style={{ color: alternativeColor }}>{this.state.image}</span>
+      </div>
+    )}
+  </ImagePalette>
